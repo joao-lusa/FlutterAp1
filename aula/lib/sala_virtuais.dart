@@ -22,7 +22,7 @@ class SalasVirtuaisState extends State<SalasVirtuais> {
             alignment: Alignment.topLeft,
             child: Container(
                 alignment: Alignment.topLeft,
-                height: 150,
+                height: 160,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(10),
@@ -79,93 +79,182 @@ class SalasVirtuaisState extends State<SalasVirtuais> {
                     color: Colors.white),
                 child: ListView(
                   children: [
+                    //aula 1
                     Padding(
-                        padding: EdgeInsets.only(top: 30, left: 10, right: 10),
-                        child: ExpansionTile(
-                          title: Row(children: [
-                            Expanded(
-                              child: Text(
-                                'Aula 01 - Vamos falar de Mobilidade!',
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                      padding: EdgeInsets.only(top: 30, left: 10, right: 10),
+                      child: ExpansionTile(
+                        title: Row(children: [
+                          Expanded(
+                            child: Text(
+                              'Aula 01 - Vamos falar de Mobilidade!',
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ]),
+                        collapsedBackgroundColor: Colors.grey[200],
+                        children: [
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: Icon(
+                                Icons.info,
+                                color: Colors.blue,
+                                size: 40,
                               ),
                             ),
-                          ]),
-                          collapsedBackgroundColor: Colors.grey[200],
-                          children: [
-                            ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: Colors.white,
-                                child: Icon(
-                                  Icons.info,
-                                  color: Colors.blue,
-                                  size: 40,
-                                ),
+                            title: Text(
+                              'Seja bem vindo',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          ListTile(
+                            title: Text(
+                              'Eu sou o professor Ramon e estarei com vocês nesta jornada.',
+                            ),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber[600],
+                              child: Icon(
+                                Icons.link,
+                                color: Colors.grey[700],
                               ),
-                              title: Text(
-                                'Seja bem vindo',
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            title: Text(
+                              'Link - Aula 01',
+                            ),
+                            subtitle: Text("Concluido",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    backgroundColor: Colors.grey)),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.wechat,
+                                color: Colors.grey[700],
                               ),
                             ),
-                            ListTile(
-                              title: Text(
-                                'Eu sou o professor Ramon e estarei com vocês nesta jornada.',
+                            title: Text('Sala de interação - Boas Vindas'),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.insert_drive_file,
+                                color: Colors.grey[700],
                               ),
                             ),
-                            Divider(
-                              height: 20,
-                              thickness: 3,
-                              color: Colors.grey[200],
-                            ),
-                            ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: Colors.amber[600],
-                                child: Icon(
-                                  Icons.link,
-                                  color: Colors.grey[700],
-                                ),
-                              ),
-                              title: Text(
-                                'Link - Aula 01',
-                              ),
-                              subtitle: Text("Concluido",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      backgroundColor: Colors.grey)),
-                            ),
-                            Divider(
-                              height: 20,
-                              thickness: 3,
-                              color: Colors.grey[200],
-                            ),
-                            ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: Colors.grey[200],
-                                child: Icon(
-                                  Icons.wechat,
-                                  color: Colors.grey[700],
-                                ),
-                              ),
-                              title: Text('Sala de interação - Boas Vindas'),
-                            ),
-                            Divider(
-                              height: 20,
-                              thickness: 3,
-                              color: Colors.grey[200],
-                            ),
-                            ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: Colors.grey[200],
-                                child: Icon(
-                                  Icons.insert_drive_file,
-                                  color: Colors.grey[700],
-                                ),
-                              ),
-                              title: Text('Arquivo - Material da aula'),
-                            ),
-                          ],
-                        ),
+                            title: Text('Arquivo - Material da aula'),
+                          ),
+                        ],
                       ),
+                    ),
+                    //aula 2
+                    Padding(
+                      padding: EdgeInsets.only(top: 30, left: 10, right: 10),
+                      child: ExpansionTile(
+                        title: Row(children: [
+                          Expanded(
+                            child: Text(
+                              'Aula 02 - ',
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ]),
+                        collapsedBackgroundColor: Colors.grey[200],
+                        children: [
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: Icon(
+                                Icons.info,
+                                color: Colors.blue,
+                                size: 40,
+                              ),
+                            ),
+                            title: Text(
+                              'Seja bem vindo',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          ListTile(
+                            title: Text(
+                              'Eu sou o professor Ramon e estarei com vocês nesta jornada.',
+                            ),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.amber[600],
+                              child: Icon(
+                                Icons.link,
+                                color: Colors.grey[700],
+                              ),
+                            ),
+                            title: Text(
+                              'Link - Aula 01',
+                            ),
+                            subtitle: Text("Concluido",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    backgroundColor: Colors.grey)),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.wechat,
+                                color: Colors.grey[700],
+                              ),
+                            ),
+                            title: Text('Sala de interação - Boas Vindas'),
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 3,
+                            color: Colors.grey[200],
+                          ),
+                          ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.insert_drive_file,
+                                color: Colors.grey[700],
+                              ),
+                            ),
+                            title: Text('Arquivo - Material da aula'),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
