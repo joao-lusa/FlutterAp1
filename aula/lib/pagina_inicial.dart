@@ -102,9 +102,9 @@ class PaginaInicialState extends State<PaginaInicial> {
                             child: CircularPercentIndicator(
                               radius: 56.0,
                               lineWidth: 5.0,
-                              percent: 0.70,
+                              percent: 0.30,
                               center: new Text(
-                                '70%',
+                                '30%',
                                 style: TextStyle(color: Colors.white),
                               ),
                               progressColor: Colors.yellow,
@@ -196,7 +196,7 @@ class PaginaInicialState extends State<PaginaInicial> {
                       radius: 30,
                     ),
                     Padding(padding: EdgeInsets.only(top: 8)),
-                    Text('Fulano',
+                    Text('João',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
