@@ -21,7 +21,8 @@ class SalasVirtuaisState extends State<SalasVirtuais> {
       decoration: BoxDecoration(color: Color.fromARGB(255, 239, 239, 239)),
       child: Column(
         children: [
-          Align( //Header Conteudo 
+          Align(
+            //Header Conteudo
             alignment: Alignment.topLeft,
             child: Container(
               alignment: Alignment.topLeft,
@@ -69,10 +70,11 @@ class SalasVirtuaisState extends State<SalasVirtuais> {
                 ),
               ),
             ),
-          ), 
+          ),
           //Fim Header Conteudo
-          
-          Container( //Lista de aulas
+
+          Container(
+            //Lista de aulas
             child: Align(
               child: Container(
                 alignment: Alignment.topLeft,
