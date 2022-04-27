@@ -1,9 +1,10 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
 class SalasVirtuais extends StatefulWidget {
+  const SalasVirtuais({Key? key}) : super(key: key);
+
   @override
   SalasVirtuaisState createState() {
     return SalasVirtuaisState();

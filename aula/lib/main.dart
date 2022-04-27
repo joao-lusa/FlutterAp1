@@ -1,5 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'pagina_inicial.dart';
 
 void main() {
@@ -141,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 100,
               color: Colors.black,
               child: Row(
-                children: [
+                children: const [
                   Text(
                     "AVISO DE COOKIES!",
                     style: TextStyle(color: Colors.white),

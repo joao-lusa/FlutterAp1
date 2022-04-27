@@ -1,8 +1,12 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'sala_virtuais.dart';
 
 class PaginaInicial extends StatefulWidget {
+  const PaginaInicial({Key? key}) : super(key: key);
+
   @override
   PaginaInicialState createState() {
     return PaginaInicialState();
@@ -77,7 +81,7 @@ class PaginaInicialState extends State<PaginaInicial> {
                         Padding(
                           padding: EdgeInsets.only(top: 30, left: 20),
                           child: Column(
-                            children: [
+                            children: const [
                               SizedBox(
                                 width: 230,
                                 child: Text(
@@ -103,7 +107,7 @@ class PaginaInicialState extends State<PaginaInicial> {
                               radius: 56.0,
                               lineWidth: 5.0,
                               percent: 0.30,
-                              center: new Text(
+                              center: Text(
                                 '30%',
                                 style: TextStyle(color: Colors.white),
                               ),
@@ -161,6 +165,7 @@ class PaginaInicialState extends State<PaginaInicial> {
         ));
   }
 
+  //menu lateral
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -203,7 +208,7 @@ class PaginaInicialState extends State<PaginaInicial> {
                             fontWeight: FontWeight.bold)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text('ALUNO',
                             style: TextStyle(color: Colors.grey, fontSize: 12)),
                         Icon(
